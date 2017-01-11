@@ -86,6 +86,7 @@ public class ExcelTableReport {
 		    else if (cell instanceof AmountValueCell)
 			createAmountCell(hssrow, cnum, ((AmountValueCell) cell).getValue(),
 				((AmountValueCell) cell).getCurrency());
+		    cnum++;
 		}
 	    }
 	}
