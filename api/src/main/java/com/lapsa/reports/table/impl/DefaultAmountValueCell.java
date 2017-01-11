@@ -1,8 +1,9 @@
-package com.lapsa.reports.table;
+package com.lapsa.reports.table.impl;
 
 import java.util.Currency;
 
 import com.lapsa.fin.FinCurrency;
+import com.lapsa.reports.table.AmountValueCell;
 
 public class DefaultAmountValueCell implements AmountValueCell {
 

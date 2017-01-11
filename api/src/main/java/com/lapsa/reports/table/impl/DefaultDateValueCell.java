@@ -1,8 +1,10 @@
-package com.lapsa.reports.table;
+package com.lapsa.reports.table.impl;
 
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Date;
+
+import com.lapsa.reports.table.DateValueCell;
 
 public class DefaultDateValueCell implements DateValueCell {
 

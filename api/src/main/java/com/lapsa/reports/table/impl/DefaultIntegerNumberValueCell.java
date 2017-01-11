@@ -1,4 +1,6 @@
-package com.lapsa.reports.table;
+package com.lapsa.reports.table.impl;
+
+import com.lapsa.reports.table.IntegerNumberValueCell;
 
 public class DefaultIntegerNumberValueCell implements IntegerNumberValueCell {
 

@@ -1,9 +1,12 @@
-package com.lapsa.reports.table;
+package com.lapsa.reports.table.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+
+import com.lapsa.reports.table.HeaderCell;
+import com.lapsa.reports.table.HeaderRow;
 
 public class DefaultHeaderRow implements HeaderRow {
 
