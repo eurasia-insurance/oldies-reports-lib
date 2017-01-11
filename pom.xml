@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.lapsa.maven.pom</groupId>
+		<artifactId>javaee7-app-parent</artifactId>
+		<version>2.0</version>
+	</parent>
+
+	<groupId>com.lapsa.reports-lib</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>Reports Lib</name>
+
+	<modules>
+		<module>api</module>
+		<module>excel</module>
+	</modules>
+
+	<properties>
+		<!-- APIs -->
+		<fin-lib.version>1.1.0.1</fin-lib.version>
+		<!-- external -->
+		<poi.version>3.15</poi.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- own -->
+			<dependency>
+				<groupId>com.lapsa.reports-lib</groupId>
+				<artifactId>reports-api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<!-- internal -->
+			<dependency>
+				<groupId>com.lapsa.fin-lib</groupId>
+				<artifactId>fin-core</artifactId>
+				<version>${fin-lib.version}</version>
+			</dependency>
+			<!-- external -->
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<scm>
+		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/reports-lib.git</connection>
+		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/reports-lib.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<system>gitlab</system>
+		<url>https://gitlab.lapsa.tech/lapsa/reports-lib/issues</url>
+	</issueManagement>
+
+</project>
