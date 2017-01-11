@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.lapsa.reports-lib</groupId>
 		<artifactId>parent</artifactId>
-		<version>1.0</version>
+		<version>1.1-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>reports-excel</artifactId>
