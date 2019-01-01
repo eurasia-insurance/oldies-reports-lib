@@ -13,7 +13,7 @@
 	<version>CURRENT-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>Reports Lib</name>
+	<name>Oldies Lib : Reports Lib</name>
 
 	<modules>
 		<module>api</module>

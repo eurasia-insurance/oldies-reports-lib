@@ -10,7 +10,7 @@
 	<artifactId>reports-excel</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Reports lib : Excel implementation</name>
+	<name>Oldies Lib : Reports Lib : Excel implementation</name>
 
 	<dependencies>
 

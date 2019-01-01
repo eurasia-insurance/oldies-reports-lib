@@ -11,7 +11,7 @@
 	<artifactId>reports-api</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Reports lib : API</name>
+	<name>Oldies Lib : Reports Lib : API</name>
 
 	<dependencies>
 		<dependency>
