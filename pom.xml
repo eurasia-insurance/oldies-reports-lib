@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.lapsa.maven.pom</groupId>
-		<artifactId>javaee7-app-parent</artifactId>
-		<version>3.0-SNAPSHOT</version>
+		<groupId>tech.lapsa.maven</groupId>
+		<artifactId>maven-general</artifactId>
+		<version>CURRENT-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.lapsa.reports-lib</groupId>
-	<artifactId>parent</artifactId>
-	<version>1.2-SNAPSHOT</version>
+	<artifactId>reports-root</artifactId>
+	<version>CURRENT-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Reports Lib</name>
@@ -20,25 +21,27 @@
 	</modules>
 
 	<properties>
-		<!-- APIs -->
-		<fin-lib.version>2.1-SNAPSHOT</fin-lib.version>
+		<!-- oldies -->
+		<fin-lib.version>CURRENT-SNAPSHOT</fin-lib.version>
 		<!-- external -->
 		<poi.version>3.15</poi.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- oldies -->
+			<dependency>
+				<groupId>com.lapsa.fin-lib</groupId>
+				<artifactId>fin-root</artifactId>
+				<version>${fin-lib.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 			<!-- own -->
 			<dependency>
 				<groupId>com.lapsa.reports-lib</groupId>
 				<artifactId>reports-api</artifactId>
 				<version>${project.version}</version>
-			</dependency>
-			<!-- internal -->
-			<dependency>
-				<groupId>com.lapsa.fin-lib</groupId>
-				<artifactId>fin-core</artifactId>
-				<version>${fin-lib.version}</version>
 			</dependency>
 			<!-- external -->
 			<dependency>
@@ -50,14 +53,9 @@
 	</dependencyManagement>
 
 	<scm>
-		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/reports-lib.git</connection>
-		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/reports-lib.git</developerConnection>
+		<connection>scm:git:https://github.com/eurasia-insurance/oldies-reports-lib.git</connection>
+		<developerConnection>scm:git:https://github.com/eurasia-insurance/oldies-reports-lib.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
-
-	<issueManagement>
-		<system>gitlab</system>
-		<url>https://gitlab.lapsa.tech/lapsa/reports-lib/issues</url>
-	</issueManagement>
 
 </project>
