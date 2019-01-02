@@ -9,7 +9,7 @@
 
 	<groupId>com.lapsa.reports-lib</groupId>
 	<artifactId>reports-root</artifactId>
-	<version>20190103</version>
+	<version>CURRENT-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Oldies Lib : Reports Lib</name>
@@ -54,7 +54,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/eurasia-insurance/oldies-reports-lib.git</connection>
 		<developerConnection>scm:git:https://github.com/eurasia-insurance/oldies-reports-lib.git</developerConnection>
-		<tag>v20190103</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 </project>
