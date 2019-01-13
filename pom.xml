@@ -21,7 +21,7 @@
 
 	<properties>
 		<!-- oldies -->
-		<fin-lib.version>CURRENT-SNAPSHOT</fin-lib.version>
+		<fin-lib.version>20190113r3</fin-lib.version>
 		<!-- external -->
 		<poi.version>3.15</poi.version>
 	</properties>
